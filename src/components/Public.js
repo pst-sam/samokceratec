@@ -20,7 +20,7 @@ const Public = () => {
 
                 {/* <p>Owner: Dan Davidson</p> */}
 
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact" style={{ fontWeight: 'bold', textDecoration: 'underline', fontSize: '18px' }}>Contact Us</Link>
             </main>
             <footer>
                 <Link to="/login">Staff Login</Link>
