@@ -15,6 +15,7 @@ import PersistLogin from './features/auth/PersistLogin'
 import RequireAuth from './features/auth/RequireAuth'
 import { ROLES } from './config/roles'
 import useTitle from './hooks/useTitle';
+import ContactForm from './components/ContactForm';
 
 function App() {
   useTitle('Samok Ceratec Limited')
@@ -25,6 +26,7 @@ function App() {
         {/* public routes */}
         <Route index element={<Public />} />
         <Route path="login" element={<Login />} />
+        <Route path="contact" element={<ContactForm />} />
 
         {/* Protected Routes */}
         <Route element={<PersistLogin />}>
