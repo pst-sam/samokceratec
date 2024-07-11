@@ -7,7 +7,7 @@ const ContactForm = () => {
         return <p>Thanks for joining!</p>
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} style={{ maxWidth: '56rem', marginLeft: 'auto', marginRight: 'auto', fontSize: '1.5rem', lineHeight: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <label htmlFor="email">
                 Email Address:
             </label>
@@ -16,12 +16,16 @@ const ContactForm = () => {
                 type="email"
                 name='email'
                 placeholder='Your Email Address'
-                required />
+                required
+                minLength={3}
+                maxLength={60} />
 
             <label htmlFor="message">Message:</label>
             <textarea name="message" id="message"
                 required
                 placeholder='Your message'
+                cols={30}
+                rows={10}
             ></textarea>
 
             <ValidationError
