@@ -23,7 +23,7 @@ const Public = () => {
                 <Link to="/contact" style={{ fontWeight: 'bold', textDecoration: 'underline', fontSize: '18px' }}>Contact Us</Link>
             </main>
             <footer>
-                <Link to="/login">Staff Login</Link>
+                <Link to="/login" style={{ fontWeight: 'bold' }}>Staff Login</Link>
             </footer>
         </section>
 

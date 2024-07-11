@@ -20,7 +20,7 @@ const ContactForm = () => {
                 minLength={3}
                 maxLength={60}
                 style={{
-                    width: 'full', color: 'black', borderWidth: '1px', borderStyle: 'solid', borderRadius: '12px', borderColor: 'rgb(15 23 42 / var(--tw-border-opacity))', textAlign: 'center', padding: '5px'
+                    width: 'full', color: 'black', borderWidth: '2px', borderStyle: 'solid', borderRadius: '12px', borderColor: 'green', textAlign: 'center', padding: '5px'
                 }}
             />
 
@@ -33,7 +33,7 @@ const ContactForm = () => {
                 cols={30}
                 rows={10}
                 style={{
-                    width: 'full', color: 'black', borderWidth: '1px', borderStyle: 'solid', borderRadius: '12px', borderColor: 'rgb(15 23 42 / var(--tw-border-opacity))', textAlign: 'center', padding: '5px'
+                    width: 'full', color: 'black', borderWidth: '2px', borderStyle: 'solid', borderRadius: '12px', borderColor: 'green', textAlign: 'center', padding: '5px'
                 }}
             ></textarea>
 
@@ -44,7 +44,7 @@ const ContactForm = () => {
 
             <button type='submit' disabled={state.submitting}
                 style={{
-                    width: 'full', color: 'black', borderWidth: '1px', borderStyle: 'solid', borderRadius: '12px', borderColor: 'rgb(15 23 42 / var(--tw-border-opacity))', textAlign: 'center', padding: '5px'
+                    width: 'full', color: 'white', backgroundColor: 'green', borderWidth: '1px', borderStyle: 'solid', borderRadius: '12px', borderColor: 'rgb(15 23 42 / var(--tw-border-opacity))', textAlign: 'center', padding: '5px', fontWeight: 'bold'
                 }}>
                 Submit
             </button>
