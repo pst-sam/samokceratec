@@ -4,14 +4,14 @@ import { useForm, ValidationError } from '@formspree/react'
 const ContactForm = () => {
     const [state, handleSubmit] = useForm("mgvwvvaq");
     if (state.succeeded) {
-        return <p style={{ fontWeight: 'bold', fontSize: '30px', textAlign: 'centre', marginTop: '50px' }}>Thank you for contacting us!</p>
+        return <p style={{ fontWeight: 'bold', textAlign: 'centre', marginTop: '50px' }}>Thank you for contacting us!</p>
     }
     return (
         <section style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '25px' }}>
-            <h1 style={{ textAlign: 'center', marginBottom: '10px' }}>Contact Us</h1>
+            <h2 style={{ textAlign: 'center', marginBottom: '10px' }}>Contact Us</h2>
 
             <form onSubmit={handleSubmit} style={{ maxWidth: 'auto', marginLeft: 'auto', marginRight: 'auto', fontSize: '1.5rem', lineHeight: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <label htmlFor="email" style={{ fontWeight: 'bold' }}>
+                <label htmlFor="email">
                     Email:
                 </label>
                 <input
@@ -27,7 +27,7 @@ const ContactForm = () => {
                     }}
                 />
 
-                <label htmlFor="message" style={{ fontWeight: 'bold' }}>Message:</label>
+                <label htmlFor="message" >Message:</label>
                 <textarea
                     name="message"
                     id="message"
@@ -47,7 +47,7 @@ const ContactForm = () => {
 
                 <button type='submit' disabled={state.submitting}
                     style={{
-                        width: 'auto', color: 'white', backgroundColor: 'rgb(15 118 110)', borderWidth: '1px', borderStyle: 'solid', borderRadius: '12px', borderColor: 'rgb(15 23 42 / var(--tw-border-opacity))', textAlign: 'center', padding: '5px', fontWeight: 'bold'
+                        width: 'auto', color: 'white', backgroundColor: 'rgb(15 118 110)', borderWidth: '1px', borderStyle: 'solid', borderRadius: '12px', borderColor: 'rgb(15 23 42 / var(--tw-border-opacity))', textAlign: 'center', padding: '5px'
                     }}>
                     Submit
                 </button>
